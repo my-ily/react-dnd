@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { PetCard } from './component/PetCard';
+import { Basket } from './component/Basket';
+import Cards from './component/Cards';
+import CardContainer from './component/CardContainer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     {/* <PetCard/>
+     <Basket/> */}
+     <div className='flex flex-col'>
+     <Cards/>
+     <CardContainer/>
+     </div>
     </div>
   );
 }
